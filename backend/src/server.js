@@ -21,5 +21,5 @@ app.get('/api/info', (_request, response) => {
 });
 
 app.listen(port, () => {
-  console.log(`API lista en http://localhost:${port}`);
+  console.log(`API corriendo en http://localhost:${port}`);
 });

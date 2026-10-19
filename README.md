@@ -29,5 +29,3 @@ npm run dev:frontend
 
 - `GET /api/health`: devuelve el estado y un mensaje de funcionamiento.
 - `GET /api/info`: devuelve la lista de integrantes con nombre, edad, carrera y materias aprobadas.
-
-Para registrar los datos reales del equipo, edite `backend/src/data/integrantes.js`. El registro inicial contiene valores pendientes de completar; la edad y las materias usan `null` hasta que se actualicen.
