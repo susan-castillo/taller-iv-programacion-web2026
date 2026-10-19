@@ -1,0 +1,19 @@
+{
+  "name": "taller-iv-programacion-web2026",
+  "version": "1.0.0",
+  "private": true,
+  "workspaces": [
+    "frontend",
+    "backend"
+  ],
+  "scripts": {
+    "dev": "concurrently -k -n API,WEB -c blue,green \"npm:dev:api\" \"npm:dev:frontend\"",
+    "dev:api": "npm --workspace backend run dev",
+    "dev:frontend": "npm --workspace frontend run dev",
+    "build": "npm --workspace frontend run build",
+    "start": "npm --workspace backend start"
+  },
+  "devDependencies": {
+    "concurrently": "^9.2.1"
+  }
+}
